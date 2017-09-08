@@ -1,25 +1,25 @@
 {
-	"compilerOptions":
-	{
-	"target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false	
-	},
-	"exclude":
-	[
+    "compilerOptions":
+	    {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"removeComments": false,
+		"noImplicitAny": false
+	    },
+    "exclude":
+	    [
 		"node_modules",
 		"typings/main",
 		"typings/main.d.ts"
-	],
-	"folders":
-	[
+	    ],
+    "folders":
+	    [
 		{
-			"path": "/Applications/AMPPS/www/a2l5"
+		    "path": "/Applications/AMPPS/www/a2l5"
 		}
-	]
+	    ]
 }
