@@ -1,1 +1,0 @@
-{"version":3,"sources":["phone.ts"],"names":[],"mappings":";;;;;;;YAAA;gBAEI,eAAmB,IAAY,EAAS,KAAa;oBAAlC,SAAI,GAAJ,IAAI,CAAQ;oBAAS,UAAK,GAAL,KAAK,CAAQ;gBAAI,CAAC;gBAC9D,YAAC;YAAD,CAHA,AAGC,IAAA;YAHD,yBAGC,CAAA","file":"phone.js","sourcesContent":["export class Phone{\n\n    constructor(public name: string, public price: number) { }\n}"],"sourceRoot":"/source/"}

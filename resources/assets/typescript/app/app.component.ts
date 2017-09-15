@@ -1,12 +1,12 @@
-/// <reference path="../../../typings/browser.d.ts" />
+/// <reference path="../../../../typings/browser.d.ts" />
 import {Component, OnChanges, SimpleChanges} from '@angular/core';
-import {DataService} from './data.service';
-import {Phone} from './phone';
+// import {DataService} from './data.service';
+// import {Phone} from './phone';
 
 @Component({
     selector: 'my-app',
-    templateUrl: './js/app.component.html',
-    styleUrls: ['./js/app.component.css']
+    templateUrl: './js/app/app.component.html',
+    styleUrls: ['./js/app/app.component.css']
 })
 export class AppComponent {
     name = "Гость";

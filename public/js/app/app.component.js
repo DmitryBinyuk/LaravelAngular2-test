@@ -18,6 +18,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
+            // import {DataService} from './data.service';
+            // import {Phone} from './phone';
             AppComponent = (function () {
                 function AppComponent() {
                     this.name = "Гость";
@@ -46,8 +48,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        templateUrl: './js/app.component.html',
-                        styleUrls: ['./js/app.component.css']
+                        templateUrl: './js/app/app.component.html',
+                        styleUrls: ['./js/app/app.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

@@ -28,23 +28,22 @@ elixir(function (mix) {
     // mix.copy('node_modules/platform', 'public/platform');
     // mix.copy('node_modules/reflect-metadata', 'public/reflect-metadata');
 
-    mix.copy('resources/assets/typescript/app.component.html', 'public/js/app.component.html');
-    mix.copy('resources/assets/typescript/app.component.css', 'public/js/app.component.css');
-    mix.copy('resources/assets/typescript/user.json', 'public/js/user.json');
+    mix.copy('resources/assets/typescript/app/app.component.html', 'public/js/app/app.component.html');
+    mix.copy('resources/assets/typescript/app/app.component.css', 'public/js/app/app.component.css');
 
 
-//    mix.typescript("/**/*.ts", "public/js", {
-//        "target": "es5",
-//        "module": "system",
-//        "moduleResolution": "node",
-//        "sourceMap": true,
-//        "emitDecoratorMetadata": true,
-//        "experimentalDecorators": true,
-//        "removeComments": false,
-//        "noImplicitAny": false,
-//    });
+   // mix.typescript("/**/*.ts", "public/js", {
+   //     "target": "es5",
+   //     "module": "system",
+   //     "moduleResolution": "node",
+   //     "sourceMap": true,
+   //     "emitDecoratorMetadata": true,
+   //     "experimentalDecorators": true,
+   //     "removeComments": false,
+   //     "noImplicitAny": false,
+   // });
 
-    mix.typescript('main.ts', "public/js", {
+    mix.typescript('app/main.ts', "public/js/app", {
         "target": "es5",
         "module": "system",
         "moduleResolution": "node",
@@ -55,7 +54,7 @@ elixir(function (mix) {
         "noImplicitAny": false,
     });
     
-    mix.typescript('app.module.ts', "public/js", {
+    mix.typescript('app/app.module.ts', "public/js/app", {
         "target": "es5",
         "module": "system",
         "moduleResolution": "node",
@@ -66,7 +65,7 @@ elixir(function (mix) {
         "noImplicitAny": false,
     });
 
-     mix.typescript('app.component.ts', "public/js", {
+     mix.typescript('app/app.component.ts', "public/js/app", {
          "target": "es5",
          "module": "system",
          "moduleResolution": "node",
@@ -77,61 +76,27 @@ elixir(function (mix) {
          "noImplicitAny": false,
      });
      
-     mix.typescript('child.component.ts', "public/js", {
-         "target": "es5",
-         "module": "system",
-         "moduleResolution": "node",
-         "sourceMap": true,
-         "emitDecoratorMetadata": true,
-         "experimentalDecorators": true,
-         "removeComments": false,
-         "noImplicitAny": false,
-     });
+     // mix.typescript('app/child.component.ts', "public/js/app", {
+     //     "target": "es5",
+     //     "module": "system",
+     //     "moduleResolution": "node",
+     //     "sourceMap": true,
+     //     "emitDecoratorMetadata": true,
+     //     "experimentalDecorators": true,
+     //     "removeComments": false,
+     //     "noImplicitAny": false,
+     // });
 
-    mix.typescript('phone.ts', "public/js", {
-        "target": "es5",
-        "module": "system",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": false,
-    });
-
-    mix.typescript('log.service.ts', "public/js", {
-        "target": "es5",
-        "module": "system",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": false,
-    });
-
-    mix.typescript('data.service.ts', "public/js", {
-        "target": "es5",
-        "module": "system",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": false,
-    });
-
-    mix.typescript('user.ts', "public/js", {
-        "target": "es5",
-        "module": "system",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": false,
-    });
-
+    // mix.typescript('data.service.ts', "public/js", {
+    //     "target": "es5",
+    //     "module": "system",
+    //     "moduleResolution": "node",
+    //     "sourceMap": true,
+    //     "emitDecoratorMetadata": true,
+    //     "experimentalDecorators": true,
+    //     "removeComments": false,
+    //     "noImplicitAny": false,
+    // });
 
     mix.livereload();
     mix.browserSync({proxy: 'localhost:8000'});
