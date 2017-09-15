@@ -30,6 +30,7 @@ elixir(function (mix) {
 
     mix.copy('resources/assets/typescript/app.component.html', 'public/js/app.component.html');
     mix.copy('resources/assets/typescript/app.component.css', 'public/js/app.component.css');
+    mix.copy('resources/assets/typescript/user.json', 'public/js/user.json');
 
 
 //    mix.typescript("/**/*.ts", "public/js", {
@@ -86,6 +87,50 @@ elixir(function (mix) {
          "removeComments": false,
          "noImplicitAny": false,
      });
+
+    mix.typescript('phone.ts', "public/js", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
+
+    mix.typescript('log.service.ts', "public/js", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
+
+    mix.typescript('data.service.ts', "public/js", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
+
+    mix.typescript('user.ts', "public/js", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
 
 
     mix.livereload();

@@ -32,6 +32,17 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 AppComponent.prototype.onChanged = function (increased) {
                     increased == true ? this.clicks++ : this.clicks--;
                 };
+                AppComponent.prototype.ngOnChanges = function (changes) {
+                    for (var propName in changes) {
+                        var chng = changes[propName];
+                        var cur = JSON.stringify(chng.currentValue);
+                        var prev = JSON.stringify(chng.previousValue);
+                        this.log(propName + ": currentValue = " + cur + ", previousValue = " + prev);
+                    }
+                };
+                AppComponent.prototype.log = function (msg) {
+                    console.log(msg);
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',

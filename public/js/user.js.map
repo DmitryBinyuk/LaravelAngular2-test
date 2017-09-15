@@ -1,0 +1,1 @@
+{"version":3,"sources":["user.ts"],"names":[],"mappings":";;;;;;;YAAA;gBAAA;gBAGA,CAAC;gBAAD,WAAC;YAAD,CAHA,AAGC,IAAA;YAHD,uBAGC,CAAA","file":"user.js","sourcesContent":["export class User{\n    name: string;\n    age: number;\n}"],"sourceRoot":"/source/"}

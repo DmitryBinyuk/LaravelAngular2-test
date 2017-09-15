@@ -33,7 +33,6 @@ System.register(['@angular/platform-browser', '@angular/core', '@angular/forms',
                 child_component_1 = child_component_1_1;
             }],
         execute: function() {
-            //import 'rxjs/Rx';
             AppModule = (function () {
                 function AppModule() {
                 }

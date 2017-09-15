@@ -1,5 +1,7 @@
 /// <reference path="../../../typings/browser.d.ts" />
-import {Component} from '@angular/core';
+import {Component, OnChanges, SimpleChanges} from '@angular/core';
+import {DataService} from './data.service';
+import {Phone} from './phone';
 
 @Component({
     selector: 'my-app',
@@ -22,5 +24,18 @@ export class AppComponent {
     clicks:number = 0;
     onChanged(increased){
         increased==true?this.clicks++:this.clicks--;
+    }
+
+    ngOnChanges(changes: SimpleChanges) {
+        for (let propName in changes) {
+            let chng = changes[propName];
+            let cur  = JSON.stringify(chng.currentValue);
+            let prev = JSON.stringify(chng.previousValue);
+            this.log(`${propName}: currentValue = ${cur}, previousValue = ${prev}`);
+        }
+    }
+
+    private log(msg: string) {
+        console.log(msg);
     }
 }

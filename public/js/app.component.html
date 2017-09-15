@@ -14,6 +14,8 @@
 <button (click)="increase($event)">Click</button>
 <p>Количество кликов {{count}}</p>
 
+<h2>Количество кликов(2): {{clicks}}</h2>
+oooooooooooooooooooooooooooooooooooooooooooo
 <h2>дочерний компонент:</h2>
 Количество кликов: {{clicks}}
-<child-comp [userAge]="age" (onChanged)="onChanged($event)"></child-comp>
+<child-comp [userAge]="age" (onChanged)="onChanged($event)" [name]="name"></child-comp>
