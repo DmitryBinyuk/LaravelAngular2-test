@@ -1,6 +1,6 @@
 /// <reference path="../../../../typings/browser.d.ts" />
 import {Component, OnChanges, SimpleChanges} from '@angular/core';
-// import {DataService} from './data.service';
+import {ProductService} from './product/product.service';
 // import {Phone} from './phone';
 
 @Component({

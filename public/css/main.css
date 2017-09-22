@@ -1,0 +1,252 @@
+.phone_list_element {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.phone_list_image {
+    width: 180px;
+    height: 165px;
+}
+
+.phone_detail_image {
+    width: 400px;
+    height: 321px;
+}
+
+.phone_list_name {
+    vertical-align: top;
+    display: block;
+    float: left;
+}
+
+.block {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #696868;
+    /*opacity: 0.5;*/
+    height: 50px;
+}
+
+.header ul li {
+    float: left;
+    height: 50px;
+}
+
+.header ul li a.main_header_link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 50px;
+    vertical-align: center;
+}
+
+.header ul li p, .header ul li a.main_header_link {
+    display: block;
+    color: #46E7AB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 50px;
+    vertical-align: center;
+}
+
+.header ul li a.main_header_link:hover {
+    background-color: grey;
+    height: 50px;
+    vertical-align: center;
+}
+
+.header_search {
+    position: absolute;
+    right: 15px;
+    margin-top: 14px;
+    float: left;
+}
+
+.logged_as_block {
+    padding-top: 13px;
+    color: #46E7AB;
+    position: absolute;
+    right: 215px;
+    margin-top: 3px;
+    float: left;
+}
+
+body {
+    margin: 0;
+}
+
+.header_search_label {
+    color: white;
+    position: absolute;
+    right: 180px;
+    float: left;
+}
+
+.left_bar {
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+}
+
+/*.wrapper{
+    width: 100%;
+}*/
+
+/*.phones_container_list{
+    width: 70%;
+}*/
+    margin-top: 14px;
+}
+
+.filtering_phones {
+    left: 15px;
+    width: 10%;
+    display: block;
+    margin-left: 20px;
+}
+
+.filtering_phones span {
+    margin-bottom: 10px;
+}
+
+.main {
+    min-height: 100%;
+}
+
+#footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0;
+    padding: 10px;
+    background: #15BC7E;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    /*position: absolute;*/
+    height: 40px;
+    margin:auto;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.comment_title {
+    text-decoration: underline;
+    padding-left: 50px;
+}
+
+.comment_input {
+    width: 40%!important;
+    margin-top: 30px;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    margin-bottom: 80px!important;
+}
+
+.comments_list {
+    list-style-type: none;
+}
+
+.profile_container {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.profile_name_input {
+    width: 40%!important;
+}
+
+.profile_line {
+    color: #ddd;
+    background-color: #ddd;
+    height: 1px;
+
+}
+input.ng-invalid-required{
+    border:1.5px solid red;
+}
+
+.profile_error {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #E2A9A4;
+}
+
+.feedback {
+    right: 0px;
+    position: fixed;
+    top: 45%;
+    /*left: 98%;*/
+    margin-top: -50px;
+    /*margin-left: -50px;*/
+    width: 4%;
+    height: 230px;
+    border-style: solid;
+    border-color: lightblue;
+    border-radius: 10px;
+}
+
+.ng-show {
+    width: 120px;
+    
+}
+
+.feedback_fullsize {
+    right: 4%;
+    position: fixed;
+    top: 45%;
+    /*left: 98%;*/
+    margin-top: -50px;
+    /*margin-left: -50px;*/
+    width: 20%;
+    height: 230px;
+    border-style: solid;
+    border-color: lightblue;
+    border-radius: 10px;
+    
+    transition: all linear 1s;
+    background-color: lightblue;
+}
+
+.feedback_fullsize.ng-hide {
+    width: 0%;
+}
+
+.feedback_text {
+    -ms-transform:rotate(270deg); /* IE 9 */
+    -moz-transform:rotate(270deg); /* Firefox */
+    -webkit-transform:rotate(270deg); /* Safari and Chrome */
+    -o-transform:rotate(270deg);
+}

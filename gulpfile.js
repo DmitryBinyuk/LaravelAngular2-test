@@ -31,6 +31,8 @@ elixir(function (mix) {
     mix.copy('resources/assets/typescript/app/app.component.html', 'public/js/app/app.component.html');
     mix.copy('resources/assets/typescript/app/app.component.css', 'public/js/app/app.component.css');
 
+    mix.copy('resources/assets/typescript/app/product/product.component.html', 'public/js/app/product/product.component.html');
+
 
    // mix.typescript("/**/*.ts", "public/js", {
    //     "target": "es5",
@@ -65,38 +67,38 @@ elixir(function (mix) {
         "noImplicitAny": false,
     });
 
-     mix.typescript('app/app.component.ts', "public/js/app", {
-         "target": "es5",
-         "module": "system",
-         "moduleResolution": "node",
-         "sourceMap": true,
-         "emitDecoratorMetadata": true,
-         "experimentalDecorators": true,
-         "removeComments": false,
-         "noImplicitAny": false,
-     });
-     
-     // mix.typescript('app/child.component.ts', "public/js/app", {
-     //     "target": "es5",
-     //     "module": "system",
-     //     "moduleResolution": "node",
-     //     "sourceMap": true,
-     //     "emitDecoratorMetadata": true,
-     //     "experimentalDecorators": true,
-     //     "removeComments": false,
-     //     "noImplicitAny": false,
-     // });
+    mix.typescript('app/app.component.ts', "public/js/app", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
 
-    // mix.typescript('data.service.ts', "public/js", {
-    //     "target": "es5",
-    //     "module": "system",
-    //     "moduleResolution": "node",
-    //     "sourceMap": true,
-    //     "emitDecoratorMetadata": true,
-    //     "experimentalDecorators": true,
-    //     "removeComments": false,
-    //     "noImplicitAny": false,
-    // });
+    mix.typescript('app/product/product.component.ts', "public/js/app/product", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
+
+    mix.typescript('app/product/product.service.ts', "public/js/app/product", {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+    });
 
     mix.livereload();
     mix.browserSync({proxy: 'localhost:8000'});

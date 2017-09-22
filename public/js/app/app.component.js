@@ -18,7 +18,6 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            // import {DataService} from './data.service';
             // import {Phone} from './phone';
             AppComponent = (function () {
                 function AppComponent() {
